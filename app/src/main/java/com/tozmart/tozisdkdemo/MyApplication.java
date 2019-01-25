@@ -2,6 +2,7 @@ package com.tozmart.tozisdkdemo;
 
 import android.app.Application;
 import android.content.Context;
+import android.support.annotation.NonNull;
 
 import com.jess.arms.base.App;
 import com.jess.arms.di.component.AppComponent;
@@ -29,6 +30,7 @@ public class MyApplication extends Application implements App {
         ToziSDK.getInstance().onTerminate(this);
     }
 
+    @NonNull
     @Override
     public AppComponent getAppComponent() {
         return ((App) ToziSDK.getInstance().getmAppDelegate()).getAppComponent();

@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 new ToziSDK.Builder()
                         .setBlurFace(false)
                         .setCorpId("o4x04hy3zljghf7oa4")
+                        .setUserId("12345")
                         .setGender(Gender.MALE)
                         .setHeight(180)
                         .setWeight(70)
