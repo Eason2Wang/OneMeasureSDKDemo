@@ -31,5 +31,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     // OneMeasureSDK
-    implementation "com.tozmart:tozmartSDK-s3:1.1.7"
+    implementation "com.tozmart:tozmartSDK-s3:1.1.9"
 }
