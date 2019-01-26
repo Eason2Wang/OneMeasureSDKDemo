@@ -1,4 +1,4 @@
-Android OneMeasureSDK Documentation
+Android OneMeasureSDK Documentation ( [https://github.com/Eason2Wang/OneMeasureSDKDemo/blob/master/README.md](中文文档))
 
 -----
  __Download Demo: __ [https://github.com/Eason2Wang/OneMeasureSDKDemo](https://github.com/Eason2Wang/OneMeasureSDKDemo)
@@ -89,8 +89,8 @@ Add the following codes where you need to call SDK API:
 
 ``` 
 new ToziSDK.Builder()
-        .setUserId("你的用户id")
-        .setCorpId("你的企业id")
+        .setUserId("user id")
+        .setCorpId("corporation id")
         .setName("wys")
         .setGender(Gender.MALE)
         .setHeight(180.f)
