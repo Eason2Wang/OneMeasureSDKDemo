@@ -17,16 +17,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         findViewById(R.id.start).setOnClickListener(v ->
                 new ToziSDK.Builder()
-                        .setBlurFace(true)
-                        .setCorpId("o4x04hy3zljghf7oa4")
-                        .setUserId("12345")
-                        .setGender(Gender.FEMALE)
-                        .setHeight(180)
-                        .setWeight(70)
-                        .setLanguage(Language.ENGLISH)
+                        .setCorpId("你的用户id")
+                        .setUserId("你的企业id")
                         .setName("wys")
-                        .setUnit(Unit.IMPERIAL)
+                        .setGender(Gender.MALE)
+                        .setHeight(180.f)
+                        .setWeight(70.f)
+                        .setLanguage(Language.CHINESE)
+                        .setUnit(Unit.METRIC)
                         .setCameraMode(CameraMode.SNAPSHOT)
+                        .setBlurFace(false)
                         .start(MainActivity.this)
         );
     }
