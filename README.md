@@ -1,4 +1,4 @@
-Android OneMeasureSDK 集成文档
+Android OneMeasureSDK 集成文档 ([English Documentation](https://github.com/Eason2Wang/OneMeasureSDKDemo/blob/master/README-en.md))
 
 -----
  __Demo下载地址：__ [https://github.com/Eason2Wang/OneMeasureSDKDemo](https://github.com/Eason2Wang/OneMeasureSDKDemo)
