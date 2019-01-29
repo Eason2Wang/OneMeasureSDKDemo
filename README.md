@@ -1,7 +1,7 @@
 Android OneMeasureSDK 集成文档 ([English Documentation](https://github.com/Eason2Wang/OneMeasureSDKDemo/blob/master/README-en.md))
 
 -----
-新版SDK有如下升级：
+新版SDK全面改版：
 - 算法全新升级，正面展示全身轮廓，轮廓预测更加准确；
 - UI全新改版，用户体验更加友好
 - SDK体积缩小至不足300K，集成和调用更加方便
