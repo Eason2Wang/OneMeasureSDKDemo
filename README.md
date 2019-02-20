@@ -39,7 +39,7 @@ android {
 ``` 
 dependencies {
     ...
-    implementation "com.tozmart:tozmartSDK-s3:1.2.4"
+    implementation "com.tozmart:tozmartSDK-s3:1.2.7"
     ...
 }
 ``` 
@@ -120,5 +120,22 @@ new ToziSDK.Builder()
 |unit|int|否|setUnit(unit)|尺寸显示的单位：Unit.METRIC（公制，默认）、IUnit.IMPERIAL（英制）|
 |isBlurFace|Boolean|否|setBlurFace(isBlurFace)|是否对拍摄的照片进行脸部模糊处理，默认是true|
 |cameraMode|int|否|setCameraMode(cameraMode)|设置他拍或者自拍模式：CameraMode.SNAPSHOT（他拍模式，默认）、CameraMode.SELFIE（自拍模式）|
+
+#### 1.3 问题
+
+如果在编译运行时遇到如下错误：
+``` 
+Execution failed for task ':app:transformResourcesWithMergeJavaResForDebug'.
+> More than one file was found with OS independent path 'META-INF/proguard/androidx-annotations.pro'
+``` 
+只需在build文件中添加如下配置：
+``` 
+defaultConfig {
+    ...
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+}
+``` 
 
  __Demo下载地址：__ [https://github.com/Eason2Wang/OneMeasureSDKDemo](https://github.com/Eason2Wang/OneMeasureSDKDemo)
