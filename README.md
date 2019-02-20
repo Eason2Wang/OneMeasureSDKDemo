@@ -121,7 +121,7 @@ new ToziSDK.Builder()
 |isBlurFace|Boolean|否|setBlurFace(isBlurFace)|是否对拍摄的照片进行脸部模糊处理，默认是true|
 |cameraMode|int|否|setCameraMode(cameraMode)|设置他拍或者自拍模式：CameraMode.SNAPSHOT（他拍模式，默认）、CameraMode.SELFIE（自拍模式）|
 
-#### 1.3 问题
+## 1.3 问题
 
 如果在编译运行时遇到如下错误：
 ``` 
