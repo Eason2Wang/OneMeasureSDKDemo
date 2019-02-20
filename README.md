@@ -39,7 +39,7 @@ android {
 ``` 
 dependencies {
     ...
-    implementation "com.tozmart:tozmartSDK-s3:1.2.3"
+    implementation "com.tozmart:tozmartSDK-s3:1.2.4"
     ...
 }
 ``` 
