@@ -34,7 +34,7 @@ android {
 ``` 
 dependencies {
     ...
-    implementation "com.tozmart:tozmartSDK-s3:1.2.4"
+    implementation "com.tozmart:tozmartSDK-s3:1.2.7"
     ...
 }
 ``` 
@@ -115,5 +115,22 @@ new ToziSDK.Builder()
 |unit|int|No|setUnit(unit)|language used by measurements showing：Unit.METRIC（cm/kg, Default）、IUnit.IMPERIAL(inch/lbs)|
 |isBlurFace|Boolean|No|setBlurFace(isBlurFace)|Whether to blur the face of the photos taken，default is true|
 |cameraMode|int|No|setCameraMode(cameraMode)|Set camera mode：CameraMode.SNAPSHOT（take photos by others，default）、CameraMode.SELFIE（take photos by yourself）|
+
+## 1.3 Issues
+
+If you encounter the following exception:
+``` 
+Execution failed for task ':app:transformResourcesWithMergeJavaResForDebug'.
+> More than one file was found with OS independent path 'META-INF/proguard/androidx-annotations.pro'
+``` 
+Config the following code in your build.gradle:
+``` 
+defaultConfig {
+    ...
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+}
+``` 
 
  __Download Demo: __ [https://github.com/Eason2Wang/OneMeasureSDKDemo](https://github.com/Eason2Wang/OneMeasureSDKDemo)
