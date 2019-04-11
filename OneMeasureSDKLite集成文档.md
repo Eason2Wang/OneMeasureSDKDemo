@@ -40,6 +40,7 @@ new OneMeasureSDKLite.Builder()
                 .build();
 ```
 **2.1.2 参数说明**
+
 | 参数 | 类型 | 是否必填 | 接口 | 描述 |
 | ------ | ------ | ------ | ------ | ------ |
 | activity | android.app.Activity | 是 | withActivity(activity)|当前活动的Activity，用来获取上下文|
